@@ -15,9 +15,16 @@ namespace NauchnaiConference
     
     public partial class NauchnaiConferenciiEntities : DbContext
     {
+        public static NauchnaiConferenciiEntities _context;
         public NauchnaiConferenciiEntities()
             : base("name=NauchnaiConferenciiEntities")
         {
+        }
+        public static NauchnaiConferenciiEntities GetContext()
+        {
+            if (_context == null)
+                _context = new NauchnaiConferenciiEntities();
+            return _context;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
