@@ -24,5 +24,22 @@ namespace NauchnaiConference
         {
             InitializeComponent();
         }
+
+        private void frameMain_ContentRendered(object sender, EventArgs e)
+        {
+            if(frameMain.CanGoBack)
+            {
+                btnBack.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                btnBack.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            frameMain.GoBack();
+        }
     }
 }

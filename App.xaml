@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:NauchnaiConference"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="LightSkyBlue"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
+        </Style>
     </Application.Resources>
 </Application>
