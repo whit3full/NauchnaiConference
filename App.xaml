@@ -13,5 +13,9 @@
             <Setter Property="Height" Value="30"/>
             <Setter Property="Width" Value="150"/>
         </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="180"/>
+        </Style>
     </Application.Resources>
 </Application>

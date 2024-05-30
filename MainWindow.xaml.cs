@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NauchnaiConference.Pages;
+using NauchnaiConference.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,17 +25,19 @@ namespace NauchnaiConference
         public MainWindow()
         {
             InitializeComponent();
+            Manager.UtilsFrame = frameMain;
+            frameMain.Navigate(new AuthorizationPage());
         }
 
         private void frameMain_ContentRendered(object sender, EventArgs e)
         {
             if(frameMain.CanGoBack)
             {
-                btnBack.Visibility = Visibility.Hidden;
+                btnBack.Visibility = Visibility.Visible;
             }
             else
             {
-                btnBack.Visibility = Visibility.Visible;
+                btnBack.Visibility = Visibility.Hidden;
             }
         }
 
