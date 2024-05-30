@@ -9,6 +9,27 @@
       Title="zavOtdelPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="1" VerticalAlignment="Center">
+            <Button x:Name="createButton" Content="Регистрация"
+                HorizontalAlignment="Left" Margin="10 0 0 0"/>
+            <Button x:Name="editButton" Content="Статус пользователя"
+                HorizontalAlignment="Left" Margin="10 0 0 0"/>
+        </WrapPanel>
+        <DataGrid AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID пользователя"/>
+                <DataGridTextColumn Header="Логин"/>
+                <DataGridTextColumn Header="Пароль"/>
+                <DataGridTextColumn Header="Статус" />
+                <DataGridTextColumn Header="Фамилия"/>
+                <DataGridTextColumn Header="Имя"/>
+                <DataGridTextColumn Header="Отчетсво"/>
+                <DataGridTextColumn Header="ID Роли"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

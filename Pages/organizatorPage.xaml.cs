@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NauchnaiConference.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace NauchnaiConference.Pages
         public organizatorPage()
         {
             InitializeComponent();
+            
+        }
+
+        private void createButton_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void editButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
