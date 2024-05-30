@@ -26,6 +26,7 @@ namespace NauchnaiConference.Pages
             InitializeComponent();
         }
 
+        // Код предназначеный для обработки логина и пароля пользователя, в последующем успешную авторизацию в систему
         private void btnJoin_Click(object sender, RoutedEventArgs e)
         {
             try

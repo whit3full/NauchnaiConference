@@ -29,6 +29,7 @@ namespace NauchnaiConference
             frameMain.Navigate(new AuthorizationPage());
         }
 
+        // Код предназначеный для появление кнопки назад
         private void frameMain_ContentRendered(object sender, EventArgs e)
         {
             if(frameMain.CanGoBack)
@@ -40,7 +41,7 @@ namespace NauchnaiConference
                 btnBack.Visibility = Visibility.Hidden;
             }
         }
-
+        // Код кнопки для передвижения по Frame
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             frameMain.GoBack();
